@@ -1,0 +1,180 @@
+-- By Light
+-- Version: 9
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local GUI = Instance.new("Frame")
+local Blxf = Instance.new("TextButton")
+local Title = Instance.new("TextLabel")
+local mm2 = Instance.new("TextButton")
+local afsn = Instance.new("TextButton")
+local x = Instance.new("TextButton")
+local madc = Instance.new("TextButton")
+local Arsenal = Instance.new("TextButton")
+local Cntrblx = Instance.new("TextButton")
+local Phntmf = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+GUI.Name = "GUI"
+GUI.Parent = ScreenGui
+GUI.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+GUI.Position = UDim2.new(0.312771976, 0, 0.229062125, 0)
+GUI.Size = UDim2.new(0, 282, 0, 267)
+
+Blxf.Name = "Blxf"
+Blxf.Parent = GUI
+Blxf.BackgroundColor3 = Color3.fromRGB(12, 44, 255)
+Blxf.Position = UDim2.new(-0.00506441575, 0, 0.1795194, 0)
+Blxf.Size = UDim2.new(0, 138, 0, 41)
+Blxf.Font = Enum.Font.Antique
+Blxf.Text = "Blox fruits"
+Blxf.TextColor3 = Color3.fromRGB(0, 0, 0)
+Blxf.TextScaled = true
+Blxf.TextSize = 14.000
+Blxf.TextWrapped = true
+Blxf.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://rasputin-bf.glitch.me/bloxfruits.lua"))()
+end)
+
+Title.Name = "Title"
+Title.Parent = GUI
+Title.BackgroundColor3 = Color3.fromRGB(179, 255, 156)
+Title.Position = UDim2.new(-0.00151830725, 0, -0.00535853999, 0)
+Title.Size = UDim2.new(0, 282, 0, 50)
+Title.Font = Enum.Font.PermanentMarker
+Title.Text = "Light Hub"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+mm2.Name = "mm2"
+mm2.Parent = GUI
+mm2.BackgroundColor3 = Color3.fromRGB(255, 39, 219)
+mm2.Position = UDim2.new(0.505573869, 0, 0.1819074, 0)
+mm2.Size = UDim2.new(0, 138, 0, 39)
+mm2.Font = Enum.Font.Antique
+mm2.Text = "mm2"
+mm2.TextColor3 = Color3.fromRGB(0, 0, 0)
+mm2.TextScaled = true
+mm2.TextSize = 14.000
+mm2.TextWrapped = true
+mm2.MouseButton1Click:Connect(function()
+	getgenv().mainKey = "nil"
+
+	local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+end)
+
+afsn.Name = "afsn"
+afsn.Parent = GUI
+afsn.BackgroundColor3 = Color3.fromRGB(163, 19, 0)
+afsn.Position = UDim2.new(-0.0027289968, 0, 0.330718756, 0)
+afsn.Size = UDim2.new(0, 138, 0, 41)
+afsn.Font = Enum.Font.Antique
+afsn.Text = "Anime fighting sim"
+afsn.TextColor3 = Color3.fromRGB(0, 0, 0)
+afsn.TextScaled = true
+afsn.TextSize = 14.000
+afsn.TextWrapped = true
+afsn.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/TheAbsolutionism/Anime-Fighting-Simulator/main/AFS", true))()
+end)
+
+x.Name = "x"
+x.Parent = GUI
+x.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+x.Position = UDim2.new(0.885554194, 0, -0.00387755036, 0)
+x.Size = UDim2.new(0, 32, 0, 23)
+x.Font = Enum.Font.SourceSans
+x.Text = "X"
+x.TextColor3 = Color3.fromRGB(0, 0, 0)
+x.TextScaled = true
+x.TextSize = 14.000
+x.TextWrapped = true
+x.MouseButton1Click:Connect(function()
+	if GUI.Visible == true then
+		GUI.Visible = false
+	end
+end)
+
+madc.Name = "madc"
+madc.Parent = GUI
+madc.BackgroundColor3 = Color3.fromRGB(85, 85, 0)
+madc.BorderColor3 = Color3.fromRGB(85, 85, 0)
+madc.Position = UDim2.new(0.51172477, 0, 0.340568066, 0)
+madc.Size = UDim2.new(0, 137, 0, 38)
+madc.Font = Enum.Font.SciFi
+madc.Text = "Mad City"
+madc.TextColor3 = Color3.fromRGB(0, 0, 0)
+madc.TextScaled = true
+madc.TextSize = 14.000
+madc.TextWrapped = true
+madc.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BaconLords/Random-Shit/main/MAD%20cITY"))()
+end)
+
+Arsenal.Name = "Arsenal"
+Arsenal.Parent = GUI
+Arsenal.BackgroundColor3 = Color3.fromRGB(255, 58, 127)
+Arsenal.Position = UDim2.new(0, 0, 0.482125372, 0)
+Arsenal.Size = UDim2.new(0, 136, 0, 40)
+Arsenal.Font = Enum.Font.Cartoon
+Arsenal.Text = "Arsenal"
+Arsenal.TextColor3 = Color3.fromRGB(0, 0, 0)
+Arsenal.TextScaled = true
+Arsenal.TextSize = 14.000
+Arsenal.TextWrapped = true
+Arsenal.MouseButton1Click:Connect(function()
+	getgenv().esp = true -- true or false
+
+	loadstring(game:HttpGet("https://farmware.cc/V2-loadstring", true))()
+end)
+
+Cntrblx.Name = "Cntrblx"
+Cntrblx.Parent = GUI
+Cntrblx.BackgroundColor3 = Color3.fromRGB(72, 54, 0)
+Cntrblx.Position = UDim2.new(0.51172483, 0, 0.484276831, 0)
+Cntrblx.Size = UDim2.new(0, 137, 0, 39)
+Cntrblx.Font = Enum.Font.PatrickHand
+Cntrblx.Text = "Counter blox"
+Cntrblx.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cntrblx.TextScaled = true
+Cntrblx.TextSize = 14.000
+Cntrblx.TextWrapped = true
+Cntrblx.MouseButton1Click:Connect(function()
+	getgenv().esp = true -- true or false
+
+	loadstring(game:HttpGet("https://farmware.cc/V2-loadstring", true))()
+end)
+
+Phntmf.Name = "Phntmf"
+Phntmf.Parent = GUI
+Phntmf.BackgroundColor3 = Color3.fromRGB(170, 255, 0)
+Phntmf.Position = UDim2.new(-0.00272905058, 0, 0.630344331, 0)
+Phntmf.Size = UDim2.new(0, 136, 0, 39)
+Phntmf.Font = Enum.Font.PatrickHand
+Phntmf.Text = "Phantom Forces"
+Phntmf.TextColor3 = Color3.fromRGB(0, 0, 0)
+Phntmf.TextScaled = true
+Phntmf.TextSize = 14.000
+Phntmf.TextWrapped = true
+Phntmf.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://projectevo.xyz/script/loader.lua"))()
+end)
+
+-- Scripts:
+
+local function DIDRO_fake_script() -- ScreenGui.Script 
+	local script = Instance.new('Script', ScreenGui)
+
+	frame = script.Parent.GUI
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+	
+end
+coroutine.wrap(DIDRO_fake_script)()
